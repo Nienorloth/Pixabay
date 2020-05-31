@@ -28,6 +28,10 @@ function App() {
 
       guardarTotalPaginas(calcularTotalPaginas);
 
+      //Mover la pantalla hacia arriba
+      const jumbotron = document.querySelector('.jumbotron');
+      jumbotron.scrollIntoView({behaviour: 'smooth'});
+
    }
    consultarAPI();
   }, [busqueda, paginaactual])
